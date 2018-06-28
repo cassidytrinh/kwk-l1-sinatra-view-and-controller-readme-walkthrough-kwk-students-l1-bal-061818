@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Results!</title>
+    <link rel="stylesheet" href="project_style.css" type="text/css">
+  </head>
+  <body>
+    <h1>PLACES TO GO</h1>
+    <h2>Here are some recommendations on where to go based on your answers:</h2>
+    <% results= [] %>
+    <%@places.each do |place| %>
+      <% if place.city == @city && place.age.include?(@city) == true && place.category == @category && place.noise == @noise && place.crowds == @crowds && place.sensory == @sensory && place.attention == @attention %>
+        <% results.push(place) %>
+      <% end %>
+    <% end %>

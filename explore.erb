@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<htmL>
+ <head>
+   <title>Explore!</title>
+   <link rel="stylesheet" href="project_style.css" type="text/css">
+ </head>
+ <body>
+   <h1 class="Header">EXPLORE</h1>
+   <h2>Answer some questions to find convenient places to go that fit your needs!</h2>
+   <form method="POST" action="/explore">
+     <p>Which city are you going to?
+       <select name="city">
+        <option name="LA"> Los Angeles
+        <option name="NYC"> New York City
+        <option name="Baltimore"> Baltimore
+        </select>
+     </p>
+     <p>Age Group:
+       <select name="age">
+         <option name="kid">Child
+         <option name="teen">Young Adult
+         <option name="adult">Adult
+       </select>
+     </p>
+     <p>You are looking for:
+      <select name="category">
+        <option name="food">Places to eat
+        <option name="entertainment">Entertainment
+        <option name="sites">Site-seeing locations
+      </select>
+     </p>
+     <div class="accommodations">
+        <p>
+        <h4>Select your accommodations:</h4>
+          <input class="single-checkbox"type="checkbox" name="noise">Sensitive to loud noise<br>
+          <input class="single-checkbox" type="checkbox" name="crowds">Gets overwhelmed by large crowds<br>
+          <input class="single-checkbox" type="checkbox" name="sensory">Enjoys hands-on/sensory experiences<br>
+          <input class="single-checkbox" type="checkbox" name="attention"> Has a short attention span (ADHD/ADD)<br>
+       </p>
+     </div>
+   <input type="submit">
+ </form>

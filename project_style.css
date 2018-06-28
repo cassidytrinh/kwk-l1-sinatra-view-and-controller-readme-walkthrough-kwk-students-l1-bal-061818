@@ -1,0 +1,15 @@
+/* #8cd8b9 */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+.Header{
+  font-family: Open Sans Condensed;
+  text-align: center;
+  font-size: 75px;
+}
+
+body {
+  background-color: #8cd8b9;
+  color:white;
+  font-family: Open Sans Condensed;
+  font-size: 25px;
+}
